@@ -2,49 +2,59 @@
 
 <PageTitle>Index</PageTitle>
 
-<input @onchange="ColumnChange" min="0" max="26" value="@columns" title="Columns" type="number">
-<input @onchange="RowChange" min="0" max="26" value="@rows" title="Rows" type="number">
-<table>
-    <tr>
-        @for (int j = 0; j < columns; j++)
-        {
+<label for="columns">
+    Columns
+    <input name="columns" @onchange="ColumnChange" min="0" max="26" value="@columns" title="Columns" type="number">
+</label>
+<label for="rows">
+    Rows
+    <input name="rows" @onchange="RowChange" min="0" max="26" value="@rows" title="Rows" type="number">
+</label>
+<div style="overflow: scroll;" class="container">
+    <table style="overflow: scroll;">
+        <tr>
+            @for (int j = 0; j < columns; j++)
+            {
+                <th>
+                    @letters[j]
+                </th>
+            }
             <th>
-                @letters[j]
+                Sum
             </th>
+        </tr>
+        @for (int rowIndex = 0; rowIndex < rows; rowIndex++)
+        {
+            <tr>
+                @for (int columnIndex = 0; columnIndex < totalColumns; columnIndex++)
+                {
+                    int columnArrayIndex = columnIndex;
+                    int rowArrayIndex = rowIndex;
+                    <td>
+                        @*                    Column: @columnArrayIndex<br />
+                Row: @rowArrayIndex<br />*@
+                        <input style="min-width: 6em;" value="0" type="number" @onchange="(args) => MatrixValue_OnChanged(args, rowArrayIndex, columnArrayIndex)">
+                    </td>
+                }
+            </tr>
         }
-        <th>
-            Sum
-        </th>
-    </tr>
-    @for (int rowIndex = 0; rowIndex < rows; rowIndex++)
-    {
-        <tr>
-            @for (int columnIndex = 0; columnIndex < totalColumns; columnIndex++)
-            {
-                int columnArrayIndex = columnIndex;
-                int rowArrayIndex = rowIndex;
-                <td>
-                    Column: @columnArrayIndex<br />
-                    Row: @rowArrayIndex<br />
-                    <input value="0" type="number" @onchange="(args) => MatrixValue_OnChanged(args, rowArrayIndex, columnArrayIndex)">
-                </td>
-            }
-        </tr>
-    }
 
-    @*@for (int i = 0; i < rows; i++)
-    {
+        @*@for (int i = 0; i < rows; i++)
+        {
         <tr>
-            @for (int y = 0; y <= columns; y++)
-            {
-                int index = i * (columns + 1) + y;
-                <td>
-                    <input type="number" @bind-value="input[index]">
-                </td>
-            }
+        @for (int y = 0; y <= columns; y++)
+        {
+        int index = i * (columns + 1) + y;
+        <td>
+        <input type="number" @bind-value="input[index]">
+        </td>
+        }
         </tr>
-    }*@
-</table>
+        }*@
+    </table>
+</div>
+
+<h4>Results:</h4>
 
 @if(result.Count() != 0)
 {
