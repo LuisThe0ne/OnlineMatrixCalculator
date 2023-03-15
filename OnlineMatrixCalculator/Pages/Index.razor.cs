@@ -1,25 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
-using System.Net.Http;
-using System.Net.Http.Json;
-using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.AspNetCore.Components.Routing;
-using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Components.Web.Virtualization;
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
-using Microsoft.JSInterop;
-using OnlineMatrixCalculator;
-using OnlineMatrixCalculator.Shared;
-using MudBlazor;
-
 namespace OnlineMatrixCalculator.Pages
 {
     public partial class Index
     {
-        double[, ]? inputValues;
+        double[,]? inputValues;
         const int additionalColumns = 1;
         int privateColumns = 2;
         int privateRows = 2;
@@ -87,7 +70,7 @@ namespace OnlineMatrixCalculator.Pages
 
         List<double> result = new List<double>();
         string errorMsg = "";
-        string[] letters = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+        string[] letters = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
         protected override async Task OnInitializedAsync()
         {
             ChangeArray();

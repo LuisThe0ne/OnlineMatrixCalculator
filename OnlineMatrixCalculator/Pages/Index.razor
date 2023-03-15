@@ -47,6 +47,11 @@
         </div>
     </div>
 
+    <div class="d-flex flex-column">
+        <MudButton Size="Size.Large" Variant="Variant.Outlined" OnClick="Button_OnClick">Calculate</MudButton>
+        <MudText style="font-size: large; color: red;">@errorMsg</MudText>
+    </div>
+
     <MudText Typo="Typo.h5">Results:</MudText>
 
     @if (result.Count() != 0)
@@ -57,10 +62,5 @@
             <MudText style="font-size: large;">@(letters[arrayIndex] + ": " + result[arrayIndex])</MudText>
         }
     }
-
-    <div class="d-flex flex-column">
-        <MudText style="font-size: large; color: red;">@errorMsg</MudText>
-        <MudButton Size="Size.Large" Variant="Variant.Outlined" OnClick="Button_OnClick">Calculate</MudButton>
-    </div>
 
 </MudContainer>
