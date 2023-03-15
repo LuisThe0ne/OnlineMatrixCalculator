@@ -5,18 +5,6 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
-      "url": "css\/bootstrap\/bootstrap.min.css"
-    },
-    {
-      "hash": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
-      "url": "css\/bootstrap\/bootstrap.min.css.map"
-    },
-    {
-      "hash": "sha256-6WY\/4blus2uRIb2s60LjQfQixr7kS1sh0N01FwTYvcc=",
-      "url": "css\/pico\/pico.min.css"
-    },
-    {
       "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "url": "favicon.png"
     },
@@ -29,7 +17,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-GRevFOTyXeXVD\/LyZUaZQerdpbwn7s24cfzlm9QwgYU=",
+      "hash": "sha256-TWGrUxxDnm08tMwKVDXyVlrCOt41Npa4H4bxlI+\/CkU=",
       "url": "index.html"
     },
     {
@@ -69,7 +57,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-aFbiTQCcLsf\/RbDPEMxDx\/Uj7bFhm7aKRXBxvcBSMBE=",
+      "hash": "sha256-l8HPSMFVFWajJbQ43FRtq9ByV11\/aW8qY80ZXUHrcdk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -133,11 +121,11 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-8p9uwctxopmvF9zAZ39VUfa0aLTmzK74Q51kVxS7tmM=",
+      "hash": "sha256-H7Z2IXJVEMnN+HW43d5b5CwF+TdTRDlO1zByVVuaZ9g=",
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-wpSPl55FTdsp9U4d6UryyOHiaoiwwuq7lM4f\/X930l0=",
+      "hash": "sha256-bpUW22OatwASr3cYgnuInjVay4KX2Q9NZlnglIjcaB8=",
       "url": "_framework\/OnlineMatrixCalculator.dll"
     },
     {
@@ -233,5 +221,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "R30feNnV"
+  "version": "8BxiQ6k0"
 };
