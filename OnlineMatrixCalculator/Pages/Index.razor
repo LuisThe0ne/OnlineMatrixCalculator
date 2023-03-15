@@ -4,11 +4,11 @@
 
 <label for="columns">
     Columns
-    <input name="columns" @onchange="ColumnChange" min="0" max="26" value="@columns" title="Columns" type="number">
+    <MudNumericField Value="columns" T="int" ValueChanged="(args) => ColumnChange(args)" Variant="Variant.Outlined"></MudNumericField>
 </label>
 <label for="rows">
     Rows
-    <input name="rows" @onchange="RowChange" min="0" max="26" value="@rows" title="Rows" type="number">
+    <MudNumericField Value="rows" T="int" ValueChanged="(args) => RowChange(args)" Variant="Variant.Outlined"></MudNumericField>
 </label>
 <div style="overflow: scroll;" class="container">
     <table style="overflow: scroll;">
@@ -33,7 +33,9 @@
                     <td>
                         @*                    Column: @columnArrayIndex<br />
                 Row: @rowArrayIndex<br />*@
-                        <input style="min-width: 6em;" value="0" type="number" @onchange="(args) => MatrixValue_OnChanged(args, rowArrayIndex, columnArrayIndex)">
+@*                        <input style="min-width: 6em;" value="0" type="number" @onchange="(args) => MatrixValue_OnChanged(args, rowArrayIndex, columnArrayIndex)">
+                        *@
+                        <MudNumericField T="double" ValueChanged="(args) => MatrixValue_OnChanged(args, rowArrayIndex, columnArrayIndex)" Variant="Variant.Outlined"></MudNumericField>
                     </td>
                 }
             </tr>
@@ -68,6 +70,7 @@
 <br />
 <button @onclick="Button_OnClick">Calculate</button>
 
+<h1>@text</h1>
 @*<h1>@text</h1>
 <h1>@("Länge: " + totalColumns)</h1>
 <h1>@("Breite: " + rows)</h1>*@
@@ -159,15 +162,15 @@
         inputValues = new double[rows, totalColumns];
     }
 
-    private void ColumnChange(ChangeEventArgs e)
+    private void ColumnChange(int value)
     {
-        columns = Convert.ToInt32(e.Value);
+        columns = value;
         ChangeArray();
     }
 
-    private void RowChange(ChangeEventArgs e)
+    private void RowChange(int value)
     {
-        rows = Convert.ToInt32(e.Value);
+        rows = value;
         ChangeArray();
     }
 
@@ -196,9 +199,9 @@
         }
     }
 
-    private void MatrixValue_OnChanged(ChangeEventArgs e, int columnIndex, int rowIndex)
+    private void MatrixValue_OnChanged(double value, int columnIndex, int rowIndex)
     {
-        inputValues[columnIndex, rowIndex] = Convert.ToDouble(e.Value);
+        inputValues[columnIndex, rowIndex] = value;
     }
 
     private static List<double> Solution(int length, int width, List<double> num)
