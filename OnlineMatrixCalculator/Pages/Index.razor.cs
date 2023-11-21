@@ -1,7 +1,12 @@
+using System.Globalization;
+
 namespace OnlineMatrixCalculator.Pages
 {
     public partial class Index
     {
+        CultureInfo _de = CultureInfo.GetCultureInfo("de-DE");
+        CultureInfo _us = CultureInfo.GetCultureInfo("en-US");
+        bool useUsCulture = false;
         double[,]? inputValues;
         const int additionalColumns = 1;
         int privateColumns = 2;
@@ -74,7 +79,6 @@ namespace OnlineMatrixCalculator.Pages
         protected override async Task OnInitializedAsync()
         {
             ChangeArray();
-
         }
 
         private void ChangeArray()
