@@ -17,7 +17,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-TWGrUxxDnm08tMwKVDXyVlrCOt41Npa4H4bxlI+\/CkU=",
+      "hash": "sha256-jvX7dQXXx8YxthoWmSB6Pylq\/44m\/lF9adi75LfidSA=",
       "url": "index.html"
     },
     {
@@ -57,11 +57,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-Bt\/mHv\/eabsV4ny8MhHdM+NkfToXldqy0TSTq+GZ9yE=",
+      "hash": "sha256-RD4ld4az3+pE4ZL3HkHd3BsH7pH7EiCDz+OAFCkbdNI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-MmC+uTcvkNTE+yGS2QQzpIk+Qm1Qq\/VcuoX\/fC7cmOM=",
+      "hash": "sha256-q0lIJiZiSL1LHQyV3\/GAw\/vecEY6JxZo9b5n4zQfTbA=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -121,11 +121,11 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-H7Z2IXJVEMnN+HW43d5b5CwF+TdTRDlO1zByVVuaZ9g=",
+      "hash": "sha256-cCPrQKJ0Nf1YudELle2bAvdnaxg5D+aD0L+18D8FCN8=",
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-+FVqsUihEj9x+qlyI2k9\/RpcGXWP1WuOSNa6C\/zhN1g=",
+      "hash": "sha256-HHwJbLuRaigzrdk2EQknMTpf0zBU\/NLOzy0iFMCqGOU=",
       "url": "_framework\/OnlineMatrixCalculator.dll"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/System.dll"
     },
     {
-      "hash": "sha256-ql0K2XV6qotmEmK6bGLZLExX1zhksCrf2Ljk\/4V7rFQ=",
+      "hash": "sha256-uLVDL9DukFXqxIc8FAuYUc5F8wP25CWX8+DPYaQ1GxI=",
       "url": "_framework\/System.Linq.dll"
     },
     {
@@ -185,7 +185,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-k5mI4QmgaJYTqU3F5KMKxsirCMTVVk97B4suo4rL3FY=",
+      "hash": "sha256-L2r2aowAylA2mWFbTIVLIEVfywgO4r7JmAp81mG5WW4=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -193,7 +193,7 @@
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-hWsSyUisXlc3qpZF800qe9uTub0NjxswNdhsGeLyR7o=",
+      "hash": "sha256-74orrPEyGM3ODsrGUwHWLKMBT8UUstcfTGjfYXSnTwU=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -221,5 +221,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "v2XhS5l3"
+  "version": "4TwyimiO"
 };
